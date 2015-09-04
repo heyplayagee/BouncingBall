@@ -1,11 +1,9 @@
   //Stacy Gee, CP1 6-7, Bouncing Ball
   Balloon newBalloon = new Balloon();
-  public void setup()
-  {
+  public void setup(){
     size(400,300);
   }
-  public void draw()
-  {
+  public void draw(){
     background(0);
     int r = random(0,255);
     int g = random(0,255);
@@ -19,8 +17,7 @@
     newBalloon.move();
     newBalloon.show();
   }
-  class Balloon
-  {
+  class Balloon{
     int x,y;
     boolean MoveRight,MoveDown;
     Balloon(){
@@ -50,7 +47,7 @@
       if(y < 25){
         MoveDown = true;
       }
-      if(y > 275)
+      if(y > 275){
         MoveDown = false;
       }
       if(x > 375){
